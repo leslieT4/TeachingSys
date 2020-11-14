@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>复旦大学教务管理系统-登录</title>
+	<link rel="stylesheet" type="text/css" href="inc/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="inc/css/mystyle.css">
+	<script type="text/javascript" src="inc/js/jquery.js"></script>
+	<script type="text/javascript" src="inc/js/random.js" ></script>
+	<script type="text/javascript" src="inc/js/jquery.validate.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#loginform").validate({
+				rules:{
+					userid:{
+						digits:true,
+						required:true,
+						minlength:10,
+						maxlength:10,
+					},
+					password:{
+						minlength:6,
+						required:true,
+						maxlength:16,
+					},
+					usercode:{
+						equalTo:"#checkCode",
+					}
+				},
+				messages:{
+					userid:{
+						digits:"<span class='tip'>用户名只能包含数字！</span>",
+						required:"<span class='tip'>用户名是必填字段！</span>",
+						minlength:"<span class='tip'>用户名是10位数字！</span>",
+						maxlength:"<span class='tip'>用户名是10位数字！</span>",
+					},
+					password:{
+						minlength:"<span class='tip'>密码至少6位字符！</span>",
+						required:"<span class='tip'>密码是必填字段！</span>",
+						maxlength:"<span class='tip'>密码最多16位字符！</span>",
+					},
+					usercode:{
+						equalTo:"<span class='tip'>验证码有误！</span>"
+					}
+				}
+			})
+		})
+	</script>
+</head>
+<body>
+	<div id="login_main">
+		<!--标题-->
+		<h2 id="login_top_title">复旦大学教务管理系统</h2>
+		<div id="checkLogin">
+			<div id="img_title">
+				<img src="inc/pic/cas_logo.png">
+				<h2>身份认证</h2>
+			</div>
+			<!--登录表格-->
+			<div id="inputCon">
+				<form method="post" action="doLogin.php" id="loginform">
+					<ul>
+					    <li><input type="text" name="userid" placeholder="用户名 (本人学工号)"></li>
+					    <li><input type="password" name="password" placeholder="新进师生初始密码为身份证后6位"></li>
+					    <li id="code">
+							<input type="text" placeholder="验证码区分大小写" name="usercode" id="inputCode" class="code">
+							<input type="button" value=""  id="checkCode" onclick="createCode()">
+                        </li>
+					    <li>
+					    	<input type="radio" name="role" value="te" style="margin-left:0" checked>教师
+					        <input type="radio" name="role" value="stu">学生
+					    </li>
+					    <input class="loginbtn" type="submit" name="submit" value="登录">
+				    </ul>
+				</form>
+			</div>
+		</div>
+		<!--版权-->
+		<div id="footer">
+			<p>友情链接： eHall | Ecampus | Email | Cloud@Fudan</p>
+			<p>Copyright © 复旦大学版权所有， 联系我们： urp@fudan.edu.cn (86)021-65643207</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>复旦大学教务后台管理-登录</title>
+	<link rel="stylesheet" type="text/css" href="../inc/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../inc/css/mystyle.css">
+	<script type="text/javascript" src="../inc/js/jquery.js"></script>
+	<script type="text/javascript" src="../inc/js/jquery.validate.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#loginform").validate({
+				rules:{
+					userid:{
+						required:true,
+					},
+					password:{
+						minlength:6,
+						required:true,
+						maxlength:16,
+					},	
+				},
+				messages:{
+					userid:{
+						required:"<span class='tip'>用户名是必填字段！</span>",
+					},
+					password:{
+						minlength:"<span class='tip'>密码至少6位字符！</span>",
+						required:"<span class='tip'>密码是必填字段！</span>",
+						maxlength:"<span class='tip'>密码最多16位字符！</span>",
+					},
+				}
+			})
+		})
+	</script>
+</head>
+<body>
+	<div id="login_main">
+		<!--标题-->
+		<h2 id="login_top_title">复旦大学教务管理系统-后台管理</h2>
+		<div id="checkLogin">
+			<div id="img_title">
+				<img src="../inc/pic/cas_logo.png">
+				<h2>管理员登录</h2>
+			</div>
+			<!--登录表格-->
+			<div id="inputCon">
+				<form method="post" action="http://localhost:8080/192001TeachingSys/admin/adminDoLogin.php" id="loginform">
+					<ul>
+					    <li><input type="text" name="userid" placeholder="请输入用户名"></li>
+					    <li><input type="password" name="password" placeholder="请输入密码6~16个字符"></li>
+					    <input class="loginbtn" type="submit" name="submit" value="登录">
+				    </ul>
+				</form>
+			</div>
+		</div>
+		<!--版权-->
+		<div id="footer">
+			<p>友情链接： eHall | Ecampus | Email | Cloud@Fudan</p>
+			<p>Copyright © 复旦大学版权所有， 联系我们： urp@fudan.edu.cn (86)021-65643207</p>
+		</div>
+	</div>
+</body>
+</html>

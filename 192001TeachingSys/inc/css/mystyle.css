@@ -1,0 +1,466 @@
+body{
+	width: 100%;
+	background-color: #efefef;
+}
+#login_top_title,#img_title,#inputCon input[type="submit"],.top_link,.Con_box,.query_terms{
+	font-family: Microsoft Yahei;
+}
+/*登录Login页面*/
+#login_main{
+	background:transparent url(../pic/bg.png) 0 0 repeat;
+}
+/*标题*/
+#login_top_title{
+	text-align: center;
+	height: 116px;
+	line-height: 116px;
+	color:#0e4298;
+	font-size: 40px;
+}
+#checkLogin{
+	width:491px;
+	height:503px;
+	background-color:#ffffff;
+	margin: 0 auto;
+	box-shadow: 0 3px 4px #bbb;
+}
+    #img_title{
+    	width: 433px;
+    	height:62px;
+    	padding: 26px 29px 0;
+    }
+        #img_title h2,#img_title img,.top_link img,.top_link h2{
+        	display: inline-block;
+            vertical-align: middle;
+       	    color:#0e4298;
+       	    font-size:28px ;
+        }
+        #img_title h2{
+        	padding-left: 9px;
+        }
+        /* 登录表格 */
+    #checkLogin #inputCon{
+    	width: 365px;
+    	margin:0 auto;
+    }
+        #checkLogin #inputCon input[type="text"]{
+        	display: block;
+        	width: 365px;
+        	height: 45px;
+        	font-size: 18px;
+        }
+        #inputCon form ul #code .code{
+            width:150px;
+            display: inline;
+        }
+        #inputCon form ul #code #checkCode{
+            font-size:16px;
+            width:100px;
+            height:40px;
+        }
+        #inputCon form ul li{
+            margin-top: 30px;
+            color: black;
+            font-weight: bold;
+        }
+        
+        #code span{
+            display: inline-block;
+            margin-left: 20px;
+        }
+        #hidecode,#usercode{
+            position: absolute;
+            left: -99999px;
+            top: -99999px;
+        }
+        #inputCon input[type="password"]{
+            display: block;
+            width: 365px;
+            height: 45px;
+            font-size: 18px;
+        }
+        #checkLogin #inputCon li .input-val{
+            width: 180px;
+            font-size: 15px;
+            display: inline;
+        }
+        #inputCon input[type="radio"]{
+            margin-left: 60px;
+        }
+        #checkLogin #inputCon input[type="submit"]{
+        	display: block;
+        	width:118px ;
+        	height:47px ;
+        	background-color:#0e419c ;
+        	color:#ffffff ;
+        	font-size:20px;
+        	margin: 20px 248px 0;
+        	border: 1px solid #0e419c;
+        }
+/* 版权 */
+#login_main #footer{
+	width: 100%;
+	height:104px ;
+	background-color: #e3e8f0;
+	margin-top: 30px;
+}
+    #login_main #footer p{
+    	font-size: 16px;
+    	color: #848688;
+    	text-align: center;
+    	padding: 15px 0;
+    }
+/*首页页面*/
+a,h2,li{
+	color:#fff;
+}
+/* 导航栏 */
+.top_link{
+	width: 1515px;
+	height: 100px;
+	background-color: #3e50b4;
+}
+    .top_link img, .top_link li{
+    	padding: 10px 40px 0;
+    }
+    .top_link ul{
+    	font-size: 16px;
+    	font-weight: bold;
+    	display: inline-block;
+    	vertical-align: middle;
+        margin-left: -30px;
+    }
+    .top_link li{
+    	float: left;
+    }
+    .login_a{
+    	padding-left: 450px;
+    }
+    /*二级菜单*/
+    #fathermenu_first,#fathermenu_second{
+        position: relative;
+    }
+    #submenu_first,#submenu_second{
+        position: absolute;
+        left:30px;
+        width:144px;
+        top:31px;
+        z-index:999;
+        background-color:#3e50b4 ;
+        border:1.5px solid black;
+    }
+    #submenu_second{
+        left:10px
+    }
+    #submenu_first li:first-child,#submenu_second li:first-child{
+        border-bottom:1px solid white;
+        padding-bottom:6px;
+    }
+    #submenu_first li a,#submenu_second li a{
+        color: #fff;
+    }
+/*查询班级*/
+.count,.changeBox{
+    width:296px;
+    margin:20px auto;
+}
+.classQuery{
+    margin: 20px 108px;
+}
+   .classQuery li{
+       color: black;
+       font-weight: bold;
+   }
+   .classQuery form ul li input{
+       margin-top: -5px;
+   }
+/* 欢迎 */
+.Con_box{
+	width: 1300px;
+	height: 400px;
+	margin: 6px auto 0;
+	position: relative;
+}
+    .Con_box img{
+   	    width: 100%;
+   	    height: 100%;
+    }
+    .Con_box h2{
+    	position: absolute;
+    	top:189px;
+    	left: 100px;
+    }
+.person{
+	width: 1300px;
+	height: 25px;
+	margin: 0 auto;
+    background-color: #fff;
+}
+    .person img{
+    	height: 100%;
+    	padding: 0 17px 0;
+    }
+    .person h2{
+        display: inline;
+    	font-size: 16px;
+        color:#282828;
+    }
+/* 表格 */
+.info_personal,.query_result2,.query_result,.scoreRecord,#inquireArea{
+	width: 1300px;
+	margin: 10px auto 0;
+}
+    .info_personal table,.query_result2 table,.query_result table,.scoreRecord table,.scoreRecord table tr td table,.usersetting table,#inquireArea table{
+    	width: 1295px;
+    	height: 100px;
+        text-align:center;
+    }
+/* 当前的位置提示 */
+.side{
+	position: fixed;
+	right: 0;
+	top: 300px;
+	width: 50px;
+	height: 150px;
+	background-color:#3e50b4; 
+}
+    .side p{
+    	font-size: 19px;
+    	color: #fff;
+    }
+.footer{
+	width: 100%;
+	height: 40px;
+	background-color: #3e50b4;
+	margin-top: 300px;
+}
+    .footer p{
+    	color: #fff;
+    	text-align: center;
+    	line-height: 40px;
+    }
+/* 教学任务查询页面 */
+/* 查询条件 */
+.query_terms{
+	width: 1300px;
+	border: 1.5px dotted #8F8E87;
+	margin: 10px auto 0;
+}
+    .query_terms h2{
+    	color:#282828 ;
+    	display: block;
+    	border-bottom:1.5px dotted #8F8E87 
+    }
+    .query_terms ul li{
+    	font-size: 16px;
+    	color:#282828 ;
+    	font-weight: bold;
+    	padding-top: 8px;
+    }
+        .query_terms select,.classQuery select{
+            font-size: 16px;
+            height: 27px;
+        }
+    .query_terms ul li:last-child input[type="button"],.scoreRecord table input[type="button"],.scoreRecord ul li input[type="button"]{
+        background-color:#3e50b4;
+        width: 96px;
+        height: 28px;
+        font-weight: normal;
+        font-size: 14px;
+        margin-left: 280px;
+        color: #fff;
+    }
+    .query_terms input[type="button"],.query_terms input[type="submit"],.query_terms ul li .tebutton,.scoreRecord input[type="submit"],.scoreRecord ul li input[type="submit"],.usersetting td input[type="submit"],.usersetting td input[type="reset"],.classQuery ul li input,.depcfg input[type="submit"],.depcfg input[type="reset"],.countbox input[type="submit"],.countbox input[type="button"],.changeBox input[type="submit"],.courseBox input[type="submit"],.courseBox input[type="button"],.coucfg input[type="submit"]{
+        width: 80px;
+        height: 28px;
+        vertical-align: middle;
+        background-color:#3e50b4; 
+        color: #fff;
+    }
+/* 教师成绩录入界面 */
+/* 录入成绩 */
+.scoreRecord{}
+    .scoreRecord td{
+        text-align: left;
+    }
+    .scoreRecord table td input[type="text"]{
+        width: 30px;
+    }
+    .scoreRecord table td span{
+        color: #EC0000;
+    }
+    .scoreRecord table input[type="button"]{
+        margin: 0;
+    }
+    .scoreRecord table tr td table tr td{
+        text-align: center;
+    }
+    .scoreRecord table tr td table tr td input[type="text"],#inquireArea table input[type="text"]{
+        width: 75px;
+        text-align: center;
+    }
+    .scoreRecord p{
+        background-color: #3e50b4;
+        color: #fff;
+        font-size:16px;
+        padding: 5px;
+    }
+    .scoreRecord ul{
+        width: 600px;
+        margin: 5px auto 0;
+    }
+    .scoreRecord ul li{
+        float: left;
+        padding: 5px;
+    }
+    .scoreRecord ul li input[type="button"]{
+        margin-left: 0;
+    }
+/* 用户设置页面 */
+/* 密码修改 */
+.usersetting{
+    width: 500px;
+    margin: 15px auto 0;
+}
+    .usersetting table{
+        width: 500px;
+    }
+    .usersetting table td{
+        width: 200px;
+        height: 50px;
+    }
+    .usersetting td input[type="text"],.usersetting td input[type="password"],.usersetting td input[type="email"]{
+        width: 200px;
+        height: 30px;
+    }
+/*表单验证*/
+.tip{
+    font-size: 14px;
+    color:red;
+    display:block;
+    margin-top: 0px;
+}
+/*admin index页面*/
+.top_link_admin{
+	width: 1515px;
+	height: 100px;
+	background-color: #3e50b4;
+}
+.top_link_admin img,.top_link_admin li{
+    padding: 10px 20px 0;
+    float:left;
+}
+.top_link_admin ul{
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 140px;
+    margin-top:30px;
+}
+.countbox,.courseBox{
+    width:800px;
+    height:300px;
+    margin:10px auto;
+}
+.countform table{
+    width:800px;
+    height:300px;
+    text-align: center;
+}
+/*管理员页面，操作二级学院*/
+.addDep{
+    width:800px;
+    margin:10px auto;
+}
+    .addDep input[type="button"]{
+        width:118px ;
+        height:47px ;
+        background-color:#0e419c ;
+        color:#ffffff ;
+        font-size:20px;
+        border:1px solid #0e419c;
+        border-radius: 20px;
+    }
+    .countbox table td a{
+        color:#0e419c;
+        font-weight:bold;
+    }
+.depcfg{
+    width: 800px;
+    margin: 15px auto 0;
+}
+    .depcfg table{
+        width: 800px;
+    }
+    .depcfg table td{
+        width: 200px;
+        height: 50px;
+    }
+    .depcfg td input[type="text"],.coucfg input[type="text"]{
+        width: 200px;
+        height: 30px;
+    }
+    .depcfg input[type="reset"],.depcfg input[type="submit"]{
+        margin:0 150px
+    }
+/*changeClass*/
+.changeBox{
+    width:350px;
+}
+.changeMes{
+    display: block;
+    font-size:17px;
+    font-weight:bold;
+    margin-bottom: 10px;
+}
+.changeBox h2{
+    color:black;
+    font-size:16px;
+    margin-bottom: 10px;
+}
+.changeBox select{
+    margin-bottom: 10px;
+    width:170px;
+    height:30px;
+}
+.courseBox{
+    height:230px;
+}
+.courseBox h2{
+    color:black;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.courseBox select,.coucfg select{
+    width:150px;
+    height:30px;
+    margin-bottom:10px;
+}
+.query_result2 a{
+    color:#3e50b4;
+    font-weight: bold;
+}
+.coucfg{
+    width:300px;
+    height:300px;
+    margin:0 auto;
+    font-weight: bold;
+}
+.coucfg h2{
+    color:black;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.coucfg input[type="text"]{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.coucfg input[type="submit"]{
+    display: block;
+    margin:10px auto;
+}
+#taskform p{
+    display: block;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,25 @@
+/*清除块元素*/
+*{
+    margin:0;
+    padding:0;
+}
+/*超级链接样式*/
+a{
+    color:#333;
+    text-decoration: none;
+}
+a:hover{
+    color:#999;
+}
+/*去掉项目符号*/
+ul,ol,li{
+    list-style:none;
+}
+/*清除*/
+.clear{
+    clear:both;
+}
+/*去除图片的边框*/
+img{
+    border:0;
+}

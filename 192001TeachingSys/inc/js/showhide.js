@@ -1,0 +1,19 @@
+$(document).ready(function(){
+    $("#submenu_first").hide();
+    $("#fathermenu_first").mouseover(function(){
+        $("#submenu_first").show();
+    })
+    $("#fathermenu_first").mouseout(function(){
+        $("#submenu_first").hide();
+    })
+})
+
+$(document).ready(function(){
+    $("#submenu_second").hide();
+    $("#fathermenu_second").mouseover(function(){
+        $("#submenu_second").show();
+    })
+    $("#fathermenu_second").mouseout(function(){
+        $("#submenu_second").hide();
+    })
+})
